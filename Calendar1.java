@@ -56,7 +56,7 @@ public class Calendar1 {
 		}
 		if (dayOfMonth > nDaysInMonth) {
 			month++;
-			nDaysInMonth = nDaysInMonth(month, year);
+			nDaysInMonth = nDaysInMonth(month, year); // #feedback - logically this needs to be called after checking if the month is 13.
 			dayOfMonth = 1;
 			if(month == 13) {
 				year++;
